@@ -67,7 +67,7 @@
           </div>
 
           <!--header with slider -->
-          <section class="pl-5 pr-5 pb-5 lg:pl-28 lg:pr-28 pt-12 lg:pb-12 ">
+          <section class="pl-5 pr-5 pb-5 lg:pl-28 lg:pr-28 pt-12 lg:pb-12 relative ">
             <div class="carousel rounded-2xl lg:h-[570px] ">
                 <div id="slide1" class="carousel-item relative w-full">
                   <img src="Images/1.png" class="w-full" />
@@ -97,6 +97,10 @@
                     <a href="#slide1" class="btn btn-circle">❯</a>
                   </div>
                 </div>
+              </div>
+              <div class="w-[500px] bg-black p-6 absolute -mt-44 ml-[590px] rounded-2xl">
+                <h3 class="text-white items-center text-2xl font-extrabold">Meet all the heroes from the field</h3>
+                <p class="text-white items-center mt-2">pDit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin.</p> 
               </div>
           </section>
     </header>
@@ -551,8 +555,8 @@
     </section>
     </main>
     <!-- footer-2 -->
-    <footer class="footer p-10 bg-[#131318] text-base-content justify-around">
-        <aside>
+    <footer class="hidden lg:flex footer p-10 bg-[#131318] text-base-content lg:justify-around h-[400px]">
+        <aside class="lg:mt-16">
             <h1 class="font-extrabold text-3xl text-white">Get In Touch</h1>
             <p class="text-[#ccc8c8] mt-2">Dit amet consectetur. Condimentum <br> adipiscing be
                  aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -566,23 +570,23 @@
                     <p class="text-[#ccc8c8]">(+62) 123-321-543</p>
                 </div>
             </div>
-        </aside> 
-        <nav>
-          <h1 class="text-white text-[18px] font-bold">Company</h1>
-          <a class=" text-[#ccc8c8]">About us</a>
-          <a class=" text-[#ccc8c8]">Leadership</a>
-          <a class=" text-[#ccc8c8]">Careers</a>
-          <a class=" text-[#ccc8c8]">Article </a>
-          <a class=" text-[#ccc8c8]">Legal Notice</a>
+        </aside>    
+        <nav class="lg:mt-16">
+            <h1 class="text-white text-[18px] font-bold">Company</h1>
+            <a class=" text-[#ccc8c8]">About us</a>
+            <a class=" text-[#ccc8c8]">Leadership</a>
+            <a class=" text-[#ccc8c8]">Careers</a>
+            <a class=" text-[#ccc8c8]">Article </a>
+            <a class=" text-[#ccc8c8]">Legal Notice</a>
         </nav> 
-        <nav>
+        <nav class="lg:mt-16">
           <header class="text-white text-[18px] font-bold">Support</header> 
           <a class="text-[#ccc8c8]">Help Center</a>
           <a class="text-[#ccc8c8]">FAQ </a>
           <a class="text-[#ccc8c8]">Ticket Support</a>
           <a class="text-[#ccc8c8]">Contact Us</a>
         </nav> 
-        <nav>
+        <nav class="lg:mt-16">
           <header class="text-white text-[18px] font-bold">Services</header> 
           <a class="text-[#ccc8c8]">Academy</a>
           <a class="text-[#ccc8c8]">Group Lesson </a>
@@ -592,5 +596,49 @@
           <a class="text-[#ccc8c8]">Hockeys for Adult</a>
         </nav>
       </footer>
+      <!-- footer for mobile -->
+      <div class="lg:hidden footer p-10 bg-[#131318] justify-center ">
+          <div class="grid grid-cols-2 items-center justify-center justify-items-center">
+            <aside class="mt-16 col-span-2">
+                <h1 class="font-extrabold text-3xl text-white">Get In Touch</h1>
+                <p class="text-[#ccc8c8] mt-2">Dit amet consectetur. Condimentum <br> adipiscing be
+                     aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+                <div class="mt-4">
+                    <div class="flex gap-5">
+                        <img src="Images/1111.png" alt="">
+                        <p class="text-[#ccc8c8]">hockeys@support.com</p>
+                    </div>
+                    <div class="flex gap-5 mt-3">
+                        <img src="Images/111.png" alt="">
+                        <p class="text-[#ccc8c8]">(+62) 123-321-543</p>
+                    </div>
+                </div>
+            </aside>    
+            <nav class="mt-16">
+                <h1 class="text-white text-[18px] font-bold mtb-4">Company</h1>
+                <a class=" text-[#ccc8c8]">About us</a><br>
+                <a class=" text-[#ccc8c8]">Leadership</a><br>
+                <a class=" text-[#ccc8c8]">Careers</a><br>
+                <a class=" text-[#ccc8c8]">Article </a><br>
+                <a class=" text-[#ccc8c8]">Legal Notice</a><br>
+            </nav> 
+            <nav class="mt-16">
+              <header class="text-white text-[18px] font-bold mb-4">Support</header> 
+              <a class="text-[#ccc8c8]">Help Center</a><br>
+              <a class="text-[#ccc8c8]">FAQ </a><br>
+              <a class="text-[#ccc8c8]">Ticket Support</a><br>
+              <a class="text-[#ccc8c8]">Contact Us</a><br>
+            </nav> 
+            <nav class="mt-16 col-span-2 justify-center items-center ">
+              <header class="text-white text-[18px] font-bold mb-4">Services</header> 
+              <a class="text-[#ccc8c8]">Academy</a><br>
+              <a class="text-[#ccc8c8]">Group Lesson </a><br>
+              <a class="text-[#ccc8c8]">Private Lesson</a><br>
+              <a class="text-[#ccc8c8]">Hockeys for kids</a><br>
+              <a class="text-[#ccc8c8]">Group Lesson </a><br>
+              <a class="text-[#ccc8c8]">Hockeys for Adult</a><br>
+            </nav>
+         </div>
+      </div>
 </body>
 </html>
