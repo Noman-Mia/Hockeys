@@ -31,11 +31,37 @@
 </head>
 <body>
     <header class="">
+        <!-- mobile -->
+        <nav class="flex md:hidden lg:hidden">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown mt-1">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                      <li><a>Home</a></li>
+                      <li><a>About</a></li>    
+                      <li><a>Pages</a></li>
+                      <li><a>Blog</a></li>    
+                      <li><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-3xl text-black font-extrabold">Hockey<span class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-end">
+                  <a class="btn bg-[#FF4240] text-white font-semibold text-xl mr-2">Get Ticket</a>
+                </div>
+              </div>
+        </nav>
+
+
+
         <!-- navbar --> 
 
-        <div class="navbar lg:px-28 bg-base-100">
+        <div class="hidden md:px-28 md:flex lg:px-28 lg:flex bg-base-100 navbar">
             <div class="navbar-start">
-              <div class="dropdown">
+              <div class=" mt-2 dropdown ">
                 <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
                 </div>
@@ -555,8 +581,8 @@
     </section>
     </main>
     <!-- footer-2 -->
-    <footer class="hidden lg:flex footer p-10 bg-[#131318] text-base-content lg:justify-around h-[400px]">
-        <aside class="lg:mt-16">
+    <footer class="hidden md:grid grid-cols-2 lg:flex footer p-10 bg-[#131318] text-base-content md:justify-around lg:justify-around h-[400px]">
+        <aside class="md:mt-16 lg:mt-16">
             <h1 class="font-extrabold text-3xl text-white">Get In Touch</h1>
             <p class="text-[#ccc8c8] mt-2">Dit amet consectetur. Condimentum <br> adipiscing be
                  aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
@@ -571,7 +597,7 @@
                 </div>
             </div>
         </aside>    
-        <nav class="lg:mt-16">
+        <nav class="md:mt-16 lg:mt-16">
             <h1 class="text-white text-[18px] font-bold">Company</h1>
             <a class=" text-[#ccc8c8]">About us</a>
             <a class=" text-[#ccc8c8]">Leadership</a>
@@ -579,14 +605,14 @@
             <a class=" text-[#ccc8c8]">Article </a>
             <a class=" text-[#ccc8c8]">Legal Notice</a>
         </nav> 
-        <nav class="lg:mt-16">
+        <nav class="md:mt-16 lg:mt-16">
           <header class="text-white text-[18px] font-bold">Support</header> 
           <a class="text-[#ccc8c8]">Help Center</a>
           <a class="text-[#ccc8c8]">FAQ </a>
           <a class="text-[#ccc8c8]">Ticket Support</a>
           <a class="text-[#ccc8c8]">Contact Us</a>
         </nav> 
-        <nav class="lg:mt-16">
+        <nav class="md:mt-16 lg:mt-16">
           <header class="text-white text-[18px] font-bold">Services</header> 
           <a class="text-[#ccc8c8]">Academy</a>
           <a class="text-[#ccc8c8]">Group Lesson </a>
@@ -597,7 +623,7 @@
         </nav>
       </footer>
       <!-- footer for mobile -->
-      <div class="lg:hidden footer p-10 bg-[#131318] justify-center ">
+      <div class=" md:hidden lg:hidden footer p-10 bg-[#131318] justify-center ">
           <div class="grid grid-cols-2 items-center justify-center justify-items-center">
             <aside class="mt-16 col-span-2">
                 <h1 class="font-extrabold text-3xl text-white">Get In Touch</h1>
